@@ -1,0 +1,14 @@
+{
+    "name": "base64js",
+    "description": "Simple base64 encoding/decoding",
+    "version": "1.0.0",
+    "contributors": {
+        "neekey": "ni184775761@gmail.com"
+    },
+    "keywords": [ "base64" ],
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:neekey/base64.git"
+    }
+}
