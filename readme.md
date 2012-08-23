@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/neekey/base64.png)](http://travis-ci.org/neekey/base64)
 ###Base64.js -- A simple Base64 encode & decode
 
 ####Install
