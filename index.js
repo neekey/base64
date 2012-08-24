@@ -16,6 +16,14 @@ module.exports = {
         FS.writeFile( fileName, dataBuffer, next );
     },
 
+    decodeSync: function( uri, fileName ){
+
+        var base64Data = uri.replace(/^data:.+;base64,/,"");
+        var dataBuffer = new Buffer(base64Data, 'base64');
+
+        FS.writeFileSync( fileName, dataBuffer );
+    },
+
     /**
      * 将二进制文件转化为base64字符串
      * @param filename
@@ -33,5 +41,11 @@ module.exports = {
                 next( null, data.toString( 'base64' ) );
             }
         });
+    },
+
+    encodeSync: function( filename, next ){
+
+        var data = FS.readFileSync( filename );
+        return data.toString( 'base64' );
     }
 };

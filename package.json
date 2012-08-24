@@ -1,7 +1,7 @@
 {
     "name": "base64js",
     "description": "Simple base64 encoding/decoding",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "contributors": {
         "neekey": "ni184775761@gmail.com"
     },
